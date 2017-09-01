@@ -1,0 +1,33 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" controllerName="contactsapp.controller.Detail"><semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>detailTitle}" busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+
+		<semantic:content>
+			<ObjectHeader id="objectHeader" title="{FirstName}" number="{      path: 'EmployeeID',      formatter: '.formatter.currencyValue'     }" numberUnit="{BirthDate}">
+			</ObjectHeader><IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}" text="Basic Info">
+					<content>
+					    <TextArea id="__area0" rows="6" cols="1000" textAlign="Center" value="Name : {FirstName}&#10;Number : {EmployeeID}&#10;Company : {Title}&#10;Email ID : {Address}&#10;Date of Birth : {BirthDate}"/>
+					</content>
+					</IconTabFilter><IconTabFilter id="iconTabBarFilter2" icon="sap-icon://attachment" tooltip="{i18n>detailIconTabBarAttachments}" text="Attachments">
+					<content>
+					<sap.ui.core:ComponentContainer xmlns:sap.ui.core="sap.ui.core" width="100%" id="__container0" height="500px"/><Button width="50px" id="__button0" icon="sap-icon://add"/>
+					</content>
+					</IconTabFilter>
+					<IconTabFilter text="Notes" icon="sap-icon://notes" id="__filter0">
+					    <content>
+					        <TextArea id="__area1" width="100%" value="Add your notes here ..." rows="5"/>
+					    </content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</semantic:content>
+
+	<semantic:customFooterContent>
+
+	<Button text="Edit" width="80px" id="__button1"/>
+
+	</semantic:customFooterContent>
+
+	</semantic:DetailPage>
+
+</mvc:View>
