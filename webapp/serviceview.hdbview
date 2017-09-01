@@ -1,0 +1,5 @@
+schema="CONTACTS";
+query="SELECT *
+FROM \"CONTACTS\".\"contactApp::contacts\";";
+
+depends_on_table=["contactApp::contacts"];
