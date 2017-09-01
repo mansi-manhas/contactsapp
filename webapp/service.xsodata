@@ -1,3 +1,0 @@
-service{
-    "CONTACTS"."contactApp::serviceview" as "service" key ("PHONE");
-}
