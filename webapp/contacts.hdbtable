@@ -1,8 +1,0 @@
-table.schemaName="CONTACTS";
-table.tableType=ROWSTORE;
-table.columns=[
-{name="NAME";sqlType=VARCHAR;length=20;},
-{name="PHONE";sqlType=VARCHAR;length=10;},
-{name="EMAIL";sqlType=VARCHAR;length=20;}
-];
-table.primaryKey.pkcolumns=["PHONE"];
